@@ -1,0 +1,697 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@media only screen and (min-width: 481px) {
+  body {
+    background-image: url(SE7.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    max-height: 80%;
+    background-attachment: fixed;
+  }
+  .title {
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    padding: auto;
+    text-align: center;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .title:hover {
+    color: #1378e9;
+    opacity: 0.8;
+  }
+  .op {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    /* max-height: 17.25px; */
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .mv {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .mv:hover {
+    transform: scale(1.3);
+    /* color: #1378e9;
+  opacity: 0.8;
+  font-weight: bold; */
+  }
+  .fd {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .fd:hover {
+    transform: scale(1.3);
+    /* color: #1378e9;
+  opacity: 0.8; */
+  }
+  .ot {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .ot:hover {
+    transform: scale(1.3);
+    /* color: #1378e9;
+  opacity: 0.8; */
+  }
+  .line {
+    max-width: 1000px;
+    height: 1px;
+    margin: 20px auto;
+    padding: 0px;
+    background-color: white;
+    overflow: hidden;
+    /* position: absolute; */
+  }
+  .tr {
+    font-family: Rubik;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 35px auto;
+    /* transiton: all 1s ease-in-out;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 10ms; */
+  }
+  /* .tr:hover {
+  font-size: 40px;
+} */
+
+  /* .title:hover {
+  animation-name: title;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes title {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+  .img1 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+  }
+  .img2 {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+  }
+  .mv1 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im1 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im1:hover {
+    filter: brightness(120%);
+  }
+  .p1 {
+    width: 100px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: white;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    color: white;
+    /* background-color: white; */
+  }
+  .p1:hover {
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+  }
+  /* .mv1c {
+  font-family: SF Pro Display;
+  font-weight: light;
+  font-size: 15px;
+  color: white;
+} */
+
+  .mv2 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  /* .mv2:hover {
+  filter: brightness(120%);
+} */
+  .im2 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im2:hover {
+    filter: brightness(120%);
+  }
+
+  .mv3 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im3 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im3:hover {
+    filter: brightness(120%);
+  }
+  .mv4 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im4 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im4:hover {
+    filter: brightness(120%);
+  }
+  .mv5 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im5 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im5:hover {
+    filter: brightness(120%);
+  }
+  .mv6 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im6 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im6:hover {
+    filter: brightness(120%);
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url(SE7.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    max-height: 80%;
+    background-attachment: fixed;
+  }
+  .title {
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    padding: auto;
+    text-align: center;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .title:hover {
+    color: #1378e9;
+    opacity: 0.8;
+  }
+  .op {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 80vw;
+    /* max-height: 17.25px; */
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .mv {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .mv:hover {
+    transform: scale(1.3);
+    /* color: #1378e9;
+  opacity: 0.8;
+  font-weight: bold; */
+  }
+  .fd {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .fd:hover {
+    transform: scale(1.3);
+    /* color: #1378e9;
+  opacity: 0.8; */
+  }
+  .ot {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .ot:hover {
+    transform: scale(1.3);
+    /* color: #1378e9;
+  opacity: 0.8; */
+  }
+  .line {
+    width: 80vw;
+    height: 1px;
+    margin: 20px auto;
+    padding: 0px;
+    background-color: white;
+    overflow: hidden;
+    /* position: absolute; */
+  }
+  .tr {
+    font-family: Rubik;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 35px auto;
+    /* transiton: all 1s ease-in-out;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 10ms; */
+  }
+  .img1 {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80vw;
+  }
+  .img2 {
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 80vw;
+  }
+  .mv1 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto auto 20px auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im1 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im1:hover {
+    filter: brightness(120%);
+  }
+  .p1 {
+    width: 100px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: white;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    color: white;
+    /* background-color: white; */
+  }
+  .p1:hover {
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+  }
+  /* .mv1c {
+  font-family: SF Pro Display;
+  font-weight: light;
+  font-size: 15px;
+  color: white;
+} */
+
+  .mv2 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto auto 20px auto;
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  /* .mv2:hover {
+  filter: brightness(120%);
+} */
+  .im2 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im2:hover {
+    filter: brightness(120%);
+  }
+
+  .mv3 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto auto 20px auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im3 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im3:hover {
+    filter: brightness(120%);
+  }
+  .mv4 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto auto 20px auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im4 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im4:hover {
+    filter: brightness(120%);
+  }
+  .mv5 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto auto 20px auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im5 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im5:hover {
+    filter: brightness(120%);
+  }
+  .mv6 {
+    display: inline-block;
+    max-width: 250px;
+    margin: auto auto 20px auto;
+    /* border-radius: 10px; */
+    /* filter: brightness(80%); */
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+    font-family: Quicksand;
+    font-size: 12px;
+    line-height: 0.5;
+    text-align: center;
+    color: white;
+  }
+  .im6 {
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+    /* border-radius: 10px; */
+    filter: brightness(80%);
+    transiton: all 1s ease-in-out;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 10ms;
+  }
+  .im6:hover {
+    filter: brightness(120%);
+  }
+}
