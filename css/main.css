@@ -19,6 +19,30 @@
   font-weight: normal;
   font-style: italic;
 }
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-medium-webfont.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-light-webfont.woff") format("woff");
+  font-weight: light;
+  font-style: normal;
+}
 @media only screen and (min-width: 481px) {
   body {
     background-image: url(SE7.png);

@@ -1,3 +1,63 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-medium-webfont.woff2") format("woff2");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("quicksand-light-webfont.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rasa";
+  src: url("rasa-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rasa";
+  src: url("rasa-semi-webfont.woff") format("woff");
+  font-weight: semibold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rasa";
+  src: url("rasa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @media only screen and (min-width: 481px) {
   body {
     background-image: url(SE4.png);
@@ -7,6 +67,8 @@
     max-height: 80%;
     background-attachment: fixed;
     margin: 100px auto;
+    font-family: Quicksand;
+    font-weight: 500;
   }
   .mb {
     /* display: grid;
@@ -113,7 +175,8 @@
     margin: 0;
   }
   .title {
-    font-family: Rubik;
+    font-family: rubik;
+    /* font-weight: medium; */
     font-size: 45px;
     color: white;
     padding: auto;
@@ -349,7 +412,7 @@
     margin: 0;
   }
   .title {
-    font-family: Rubik;
+    font-family: rubik;
     font-size: 30px;
     color: white;
     padding: auto;
@@ -443,6 +506,7 @@
   }
   .qt {
     font-family: Rasa;
+    font-weight: regular;
     font-size: 20px;
     color: white;
     padding: auto;
